@@ -98,7 +98,7 @@ body{
 }
 /* 가상선택자 */
 main .h2{
-  font-size: 60px;
+  font-size: 50px;
 }
 .sasun::before{
   content: "/";

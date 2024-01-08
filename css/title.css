@@ -38,6 +38,8 @@
   /*! position: absolute; */
   top: 45%;
   /*! padding-left: 50px; */
+  color: #339A12;
+  font-weight: 700;
 }
 #title .wrap .witem h2 span{  
   display: none;
@@ -48,6 +50,7 @@
   top: 40%;
   /*! padding-left: 50px; */
   margin-bottom: 20px;
+  color: #848383;
 }
 /* 2번 */
 #title .wrap .witem2{
