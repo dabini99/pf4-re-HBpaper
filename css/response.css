@@ -1,0 +1,227 @@
+@media screen and (max-width:980px){
+  .vh100{  
+    min-height: auto;
+  }
+  .wrap{
+    padding: 0 15px;
+  }
+  header .wrap ul.gnb{
+    display: none;
+  }
+  header .wrap span.lang{
+    display: none;
+  }
+  .ham{
+  display: flex;
+  display: inherit;
+  }
+  .h1{    
+  font-size: calc(64px * 0.6);
+  }
+  main .h2{
+  font-size: calc(60px * 0.6);
+}
+  .h3{    
+  font-size: calc(40px * 0.8);
+  }
+  .h4{    
+  font-size: calc(34px * 0.6);
+  }
+  .h5{
+  font-size: calc(24px * 0.6);
+  font-size: calc(1rem * 0.9);
+  }
+  .h6{    
+  font-size: calc(20px * 0.6);
+  }
+/*  aslide  */
+  aside{
+    
+  display: none;
+  }
+/*  타이틀  */
+  #title{ 
+  min-height: auto;
+  }
+  #title .wrap .witem{    
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  }
+  #title .wrap .witem1::after{    
+  width: 100%;
+  height: 100%;
+  }
+  #title .wrap .witem h2{    
+  z-index: 1;
+  text-align: center;
+  order: 1;
+  margin-bottom: 20px;
+  border-top: 3.5px solid white;
+  padding-top: 20px;
+  }
+  #title .wrap .witem h2 span{
+  display: inherit;
+  }
+  #title .wrap .witem p{
+    z-index: 1;
+    top: 55%;
+    order: 2;
+    border-bottom: 3.5px solid white;
+    padding-bottom: 20px;
+  }
+/*  비디오  */
+  section#promotion .wrap{
+  /*! display: flex; */
+  /*! flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+  section#promotion .wrap iframe{    
+  width: calc(100vw - 30px);
+  height: calc(36.25vh - 30px);
+  /*! width: 100vw; */
+  /*! height: 36.25vh; */
+  }
+  section#promotion .wrap iframe:nth-child(2){    
+  height: 36.1842105vh;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  }
+  section#promotion .wrap iframe:nth-child(3){    
+  height: 56.2602965vw;
+  height: 100%;
+  width: 100%;
+  grid-column: 1;
+  grid-row: 3;
+  }
+  section#promotion .wrap iframe:nth-child(4){    
+  height: 56.2602965vw;
+  grid-column: 2;
+  grid-row: 3;
+  height: 100%;
+  width: 100%;
+  }
+/*  비즈니스  */
+  section#business .wrap ul{    
+  display: initial;
+  }
+    section#business .wrap ul li{   
+  width: auto;
+  padding-bottom: 15px;
+  }
+  section#business .wrap ul li a{    
+  perspective: initial;
+  }
+  section#business .wrap ul li a::before{
+  width: calc(100vw - 30px);
+  height: calc(46.0164835vw - 30px);
+  max-width: 728px;
+  max-height: 335px;
+  margin: 0 auto;
+  }
+/* products */
+  section#products .wrap ul{
+  width: calc(100% - 30px);
+  }
+  section#products .wrap ul li a{
+  font-size: 0;
+  }
+  section#products .wrap ul::before{ 
+  width: calc(100% - 15.625vw);
+  left: 7.8125vw;
+  }
+  section#products .wrap ul li{    
+  min-width: initial;
+  }
+  section#products .wrap div{    
+  gap: 0;
+  width: 300%;
+  width: 450%;
+  }
+  section#products .wrap div article{
+  width: calc(100% / 3);
+  }
+  section#products .wrap div article h3{
+    
+  display: none;
+  }
+  section#products .wrap div article a{
+    padding: 6px;
+    box-sizing: border-box;
+  }
+  section#products .wrap div article figure{
+  background-image: url(../img/paper_01.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+  section#products .wrap div article figure img{   
+  /*! position: absolute; */
+  /*! width: 100%; */
+  /*! height: 100%; */
+  display: none;
+  }
+  section#products .wrap div article p span{  
+  display: initial;
+  }
+/* 뉴스 */
+  section#news .wrap h3{
+    
+  line-height: 1.2;
+  }
+  section#news .wrap h3 span{    
+  flex-wrap: wrap;
+  display: flex;
+  }
+  section#news .wrap a.more{    
+  font-size: 1rem;
+  }
+  section#news .wrap ul{    
+  display: flex;
+  flex-direction: column;
+  }
+  section#news .wrap ul li:nth-child(3){    
+  display: none;
+  }
+  section#news .wrap ul li:nth-child(4){    
+  display: none;
+  }
+  section#news .wrap a.more b{    
+  font-size: 0;
+  background-image: url(../img/arrow_right_long.svg);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+/*  footer  */
+  footer{    
+  padding: 0 15px;
+  }
+  footer .wrap{    
+  display: initial;
+  }
+  footer .wrap ul.adress adress{    
+  line-height: 1;
+  font-size: 1rem;
+  }
+  footer .wrap ul.adress p{
+    
+  font-size: 1rem;
+  }
+  footer .wrap ul.name{
+    display: initial;
+  }
+  footer .wrap ul.adress{    
+  width: 100%;
+  }
+  footer .wrap ul.name select{    
+  margin: 10px 0 10px auto;
+  }
+  footer .wrap ul.name a{    
+  position: relative;
+  top: -45px;
+  }

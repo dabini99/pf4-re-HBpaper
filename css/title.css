@@ -1,0 +1,59 @@
+#title {  
+  background-color: white;
+  position: relative;
+  /*! height: calc(100vh - 100px); */
+  /*! border: 33px solid brown; */
+}
+#title .wrap {
+  height: 100%;
+  gap: 15px;
+  /*! max-width: 100%; */
+}
+#title .wrap .witem{
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+#title .wrap .witem:not(:first-child){
+  display: none;
+}
+/* 1번 */
+#title .wrap .witem1{
+  color: black;
+  /*! position: relative; */
+}
+#title .wrap .witem1:after{
+  content: ""; 
+  background-image: url(../img/title2.jpg);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-position: center;
+  background-size: cover;
+  right: 0;
+}
+#title .wrap .witem h2 {
+  order: 2;
+  /*! position: absolute; */
+  top: 45%;
+  /*! padding-left: 50px; */
+}
+#title .wrap .witem h2 span{  
+  display: none;
+}
+#title .wrap .witem p {
+  order: 1;
+  /*! position: absolute; */
+  top: 40%;
+  /*! padding-left: 50px; */
+  margin-bottom: 20px;
+}
+/* 2번 */
+#title .wrap .witem2{
+
+}
+/* 3번 */
+#title .wrap .witem3{
+
+}
