@@ -26,9 +26,19 @@ footer .wrap ul.adress h2 {
   width: 188px;
   height: 33px;
   margin-bottom: 20px;
+  width: 300px;
+  height: 53px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 footer .wrap ul.adress adress {
-  line-height: 3;
+  line-height: 1.2;
+}
+footer .wrap ul.adress adress span{
+  display: flex;
+  flex-direction: column;
+  /*! line-height: 1.2; */
 }
 footer .wrap ul.adress p {
 }
