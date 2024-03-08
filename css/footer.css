@@ -34,6 +34,7 @@ footer .wrap ul.adress h2 {
 }
 footer .wrap ul.adress adress {
   line-height: 1.2;
+  font-size: 15px;
 }
 footer .wrap ul.adress adress span{
   display: flex;
@@ -41,6 +42,7 @@ footer .wrap ul.adress adress span{
   /*! line-height: 1.2; */
 }
 footer .wrap ul.adress p {
+  font-size: 15px;
 }
 footer .wrap ul.name {
   width: 20%;
