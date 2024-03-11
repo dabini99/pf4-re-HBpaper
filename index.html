@@ -29,6 +29,24 @@
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/response.css">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+            function(){
+                $('.sliD').slick({
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 3,
+                    arrows: false
+                });
+            }
+        );
+    </script>
 </head>
 <body>
     <!-- 상단영역 -->
@@ -126,28 +144,22 @@
         <!-- business -->
         <section id="business" class="vh100">
             <div class="flex column center">
-                <h2 class="h2"><b>Our Business direction</b></h2>
-                <ul class="flex between">
-                    <li>
-                        <a href="" class="block">
-                            <h3 class="h4">종이가공</h3>
-                            <p class="p">식품포장 · 테이크아웃 · 이커머스</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="block">
-                            <h3 class="h4">특수지</h3>
-                            <p class="p">친환경 코팅 · 친환경 인쇄</p>
-                        </a>
-                    </li>
-                </ul>
+                <h2 class="h2">Our Business direction</h2>
+                <div class="por"><a href="">
+                    <h3 class="h4">종이가공</h3>
+                    <p class="p">식품포장 · 테이크아웃 · 이커머스</p>
+                </a></div>
+                <div class="por"><a href="">
+                    <h3 class="h4">특수지</h3>
+                    <p class="p">친환경 코팅 · 친환경 인쇄</p>
+                </a></div>
             </div>
         </section>
         <!-- products -->
         <section id="products" class="vh100">
             <div class="wrap flex column between">
                 <h2 class="h2"><b>Our Products</b></h2>
-                <div>
+                <div class="sliD">
                     <article>
                         <h3 class="h6">종이 봉투</h3>
                         <a href=""><img src="img/cut_paper_01.jpg" alt="토마토"></a>

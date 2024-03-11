@@ -52,36 +52,66 @@ section#business .flex {
   height: 100%;
   gap: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr auto 1fr;
+  width: 100%;
+  grid-template-columns: 100%;
 }
 section#business .flex h2 {
    font-weight: 700;
    color: #616161;
-   grid-column: 2;
    grid-row: 2;
    text-align: center;
    margin-bottom: 0;
 }
-section#business .flex ul {  
-  gap: 54px;
-  grid-column: 1;
-  grid-row: 1 / span 3;
-  display: flex;
-  flex-direction: column;
+section#business .flex .por {  
+  
+  position: relative;
 }
-section#business .flex ul li { 
-  width: 50%;
+section#business .flex .por h3 { 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  height: 100%;
+  color: white;
 }
-section#business .flex ul li:nth-of-type(1){  
+section#business .flex .por p { 
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  color: white;
+}
+section#business .flex .por:nth-of-type(1){  
+}
+section#business .flex .por:nth-of-type(1)::before{
+  content: "";
+  background-image: url(../img/busi_01.png);
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+section#business .flex .por:nth-of-type(2){
+  
+}
+section#business .flex .por:nth-of-type(2):before{
+  content: "";
+  background-image: url(../img/busi_02.jpg);
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+/* section#business .flex ul li:nth-of-type(1){  
   width: 100%;
   height: 50%;
   height: 30%;
 }
 section#business .flex ul li:nth-of-type(2){
   /*! display: none; */
-  width: 100%;
+  /* width: 100%;
   height: 50%;
 }
 section#business .flex ul li a { 
@@ -95,13 +125,13 @@ section#business .flex ul li a::before{
   background-repeat: no-repeat;
   background-size: cover;
   /*! border-radius: 20px; */
-  width: 100%;
+  /* width: 100%; */
   /*! height: 100%; */
-  position: relative;
+  /* position: relative;
 }
-section#business .flex ul li a:hover::before{
+section#business .flex ul li a:hover::before{ */
   /*! transform: rotateY(60deg) */
-}
+/* }
 section#business .flex ul li:nth-child(1) a::before{
   background-image: url(../img/busi_01.png);
   background-color: #eee;
@@ -111,25 +141,25 @@ section#business .flex ul li:nth-child(2) a::before{
   background-image: url(../img/busi_02.jpg);  
   background-position: center;
   margin-top: 25px;
-}
-section#business .flex ul li a h3 {  
+} */
+/* section#business .flex ul li a h3 {   */
   /*! margin: 30px 0 10px 0; */
   /*! position: absolute; */
-  top: 0;
+  /* top: 0;
   margin-top: 10px;
   font-weight: 700;
   color: #525151;
 }
 section#business .flex ul li a p {  
-  color: #848383;
+  color: #848383; */
   /*! position: absolute; */
-  top: 0;
+  /* top: 0; */
   /*! margin-bottom: 10px; */
-}
+/* } */
 /* products */
 section#products {
   position: relative;
-  padding: 50px 0;
+  box-sizing: border-box;
 }
 section#products .wrap {  
   height: 100%;
@@ -137,27 +167,33 @@ section#products .wrap {
   max-width: 100%;
   display: flex;
   align-items: center;
+  width: 80%;
+  width: 100%;
 }
 section#products .wrap h2 {
   order: 1;
-  padding-top: 50px;
+  padding: 50px 0 0;
   width: 1520px;
   margin: 0 auto;
   font-weight: 700;
   color: #616161;
 }
-section#products .wrap div {
+section#products .wrap div.sliD {
   height: 100%;
-  display: flex;
-  gap: 15px;
-  max-width: 1903px;
+  width: 100%;
 }
-section#products .wrap div article {  
+section#products .wrap div.sliD article {  
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 50px 30px;
+  transition: all 1s;
+  box-sizing: border-box;
+}
+section#products .wrap div.sliD article:hover{
+  transform: translateY(-30px);
 }
 /* section#products .wrap div article:nth-child(2){ 
   transform: translateY(50px);
@@ -177,19 +213,19 @@ section#products .wrap div article h3 {
   color: #616161;
 }
 section#products .wrap div article a{
-  width: 100%;
+  /*! width: 100%; */
   order: 1;
 }
 section#products .wrap div article a img { 
-  /*! width: 100%; */
-  /*! height: 45%; */
+  width: 100%;
+  height: auto;
   order: 1;
   border-radius: 15px;
   transition: all 1s;
 }
-section#products .wrap div article img:hover{
+/* section#products .wrap div article img:hover{
   transform: translateY(-30px);
-}
+} */
 /* news */
 section#news {
   display: flex;
