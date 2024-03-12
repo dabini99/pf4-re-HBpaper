@@ -251,6 +251,7 @@
 @media screen and (max-width:980px){
   body{
     color:111;
+    overflow-x: hidden;
   }
 }
 
