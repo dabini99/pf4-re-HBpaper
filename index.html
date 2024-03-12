@@ -42,7 +42,20 @@
                     centerMode: true,
                     centerPadding: '60px',
                     slidesToShow: 3,
-                    arrows: false
+                    arrows: false,
+                    responsive: [
+                        {
+                        breakpoint: 769,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3,
+                            arrows: false
+                            }
+                        }
+                    ]
+    
                 });
             }
         );
@@ -145,14 +158,22 @@
         <section id="business" class="vh100">
             <div class="flex column center">
                 <h2 class="h2">Our Business direction</h2>
-                <div class="por"><a href="">
-                    <h3 class="h4">종이가공</h3>
-                    <p class="p">식품포장 · 테이크아웃 · 이커머스</p>
-                </a></div>
-                <div class="por"><a href="">
-                    <h3 class="h4">특수지</h3>
-                    <p class="p">친환경 코팅 · 친환경 인쇄</p>
-                </a></div>
+                <div class="por">
+                    <a href="">
+                        <div class="deep">
+                            <h3 class="h4">종이가공</h3>
+                            <p class="p">식품포장 · 테이크아웃 · 이커머스</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="por">
+                    <a href="">
+                        <div class="deep">
+                            <h3 class="h4">특수지</h3>
+                            <p class="p">친환경 코팅 · 친환경 인쇄</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         <!-- products -->
