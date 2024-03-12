@@ -176,55 +176,12 @@
   section#business .flex ul li a p{
     position: inherit;
   }
-/* products */
+/*  products  */
   section#products{    
-  height: inherit;
-  overflow-x: hidden;
+  height: initial;
   }
-  section#products .wrap h2{    
-  margin-bottom: 35px;
-  }
-  section#products .wrap ul{
-  width: calc(100% - 30px);
-  }
-  section#products .wrap ul li a{
-    font-size: 0;
-  }
-  section#products .wrap ul::before{ 
-    width: calc(100% - 15.625vw);
-    left: 7.8125vw;
-  }
-  section#products .wrap ul li{    
-    min-width: initial;
-  }
-  section#products .wrap div.sliD{    
-    gap: 0;
-    width: 300%;
-    width: 450%;
-  }
-  section#products .wrap div.sliD article{
-    width: calc(100% / 3);
-  }
-  section#products .wrap div.sliD article h3{    
-    display: none;
-  }
-  section#products .wrap div.sliD article a{
-    padding: 6px;
-    box-sizing: border-box;
-  }
-  section#products .wrap div.sliD article figure{
-    background-image: url(../img/paper_01.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  section#products .wrap div.sliD figure img{   
-    /*! position: absolute; */
-    /*! width: 100%; */
-    /*! height: 100%; */
-    display: none;
-  }
-  section#products .wrap div.sliD p span{  
-    display: initial;
+  section#products .wrap h2{  
+  padding: 50px 0;
   }
 /* 뉴스 */
   section#news{
