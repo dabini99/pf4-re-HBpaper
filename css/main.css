@@ -301,6 +301,9 @@ section#news .wrap ul li a span.title {
 section#news .wrap ul li a span.block {  
   color: #7e7d7d;
 }
+section#news .wrap ul li a span.block:hover{
+  color: green;
+}
 section#news .wrap ul li a time {
   
 }
